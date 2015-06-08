@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sonido de los Animales</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="acciones.js"></script>
+<style>
+#pantalla{
+	float:left;
+	width:100%;
+	height:25%;
+	background:#C6C;
+	text-align:center;
+	font-size:4em;
+	font-weight:bold;
+	font-family:Verdana, Geneva, sans-serif;
+}
+#teclado{
+	float:inherit;
+	width:100%;
+	height:100%;
+}
+.nota{
+	position:relative;
+	float:left;
+	height:33.33%;
+	width:50%;
+	
+}
+.textonota{
+	position:relative;
+	top:80%;
+	margin:30px 30px;
+	font-weight:bold;
+	text-align:center;
+	font-size:2em;
+	font-family:"Century Gothic";
+	color:#3CC;
+}
+.tex1 {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold;
+	font-variant: normal;
+	color: #906;
+	text-decoration: blink;
+}
+.tex2 {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: bold;
+	color: #909;
+}
+</style>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header" style="background:#906">
+		<h1>Bienvenido </h1>	
+	</div>    
+    <div data-role="content" style="background-image:url(imagen/images.jpg)">
+    
+	<div data-role="content"> </div>   
+   <div align="center" class="tex1">Conoce el sonido de los animales :</div>
+   
+    <div align="center" data-role="fieldcontain" data-type="vertical" >
+    <div style="width:30%">
+      <div align="center">
+        <p align="center"><a href="#page2" data-role="button" id="Animales Domesticos">
+          ANIMALES DOMESTICOS 
+          </a>
+          <a href="#page3" data-role="button" id="Animales Salvajes">
+            ANIMALES SALVAJES
+            </a>
+        </p>
+       
+      </div>
+    </div>
+    </div>
+     <div align="center"><img src="imagen/1068191-bigthumbnail.jpg" alt="l" width="264" height="204" align="middle"></div>    
+     
+	</div>	    	
+	<div data-role="footer" style="background:#906">
+		<h4>Sonido de los Animales</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="page2" data-add-back-btn="true">
+	<div data-role="header" style="background:#FF8000">
+		<h1>Animales domesticos</h1>
+	</div>
+	<div data-role="content" style="background-image:url(imagen/images.jpg)">	
+	<div id="teclado">
+    <h1 class="tex2">Da click dentro de cada imágen para escuchar su sonido:</h1>
+    
+    <div id="perro" class="nota">
+    <div class="textonota">
+    <img src="imagen/A.Domesticos/perro.jpg" width="161" height="151">
+    </div>
+    </div>
+    
+    <div id="pollo" class="nota">
+    <div class="textonota">
+    <img src="imagen/A.Domesticos/pollo.jpg" width="161" height="151">
+    </div>
+    </div>
+    
+    <div id="gato" class="nota">
+    <div class="textonota">
+    <img src="imagen/A.Domesticos/gato.jpg" width="161" height="151">
+    </div>
+    </div>
+    
+    <div id="vaca" class="nota">
+    <div class="textonota">
+    <img src="imagen/A.Domesticos/vaca.jpg" width="161" height="151">
+    </div>
+    </div>
+    
+    <div id="cotorro" class="nota">
+    <div class="textonota">
+    <img src="imagen/A.Domesticos/cotorro.jpg" width="161" height="151">
+    </div>
+    </div>
+    
+    <div id="caballo" class="nota">
+    <div class="textonota">
+    <img src="imagen/A.Domesticos/caballo.jpg"  width="161" height="151">
+    </div>
+    </div>
+    </div>
+    
+    </div>
+	<div data-role="footer" style="background:#06F">
+	  <h4>Sonido de los Animales</h4>
+	</div>
+</div>
+</div>
+<div data-role="page" id="page3" data-add-back-btn="true">
+	<div data-role="header" style="background:#06F">
+		<h1>Animales salvajes</h1>
+	</div>
+	<div data-role="content" style="background-image:url(imagen/images.jpg)">	
+    <div id="teclado">
+     <h1 class="tex2">Da click dentro de cada imágen para escuchar su sonido:</h1>
+    
+    <div id="elefante" class="nota">
+    <div class="textonota">
+    <img src="imagen/A.Salvajes/elefante.jpg" width="161" height="151">
+    </div>
+    </div>
+    
+    <div id="mono" class="nota">
+    <div class="textonota">
+    <img src="imagen/A.Salvajes/mono.jpg" width="161" height="151">
+    </div>
+    </div>
+    
+    <div id="oso" class="nota">
+    <div class="textonota">
+    <img src="imagen/A.Salvajes/oso.jpg" width="161" height="151">
+    </div>
+    </div>
+    
+    <div id="tigre" class="nota">
+    <div class="textonota">
+    <img src="imagen/A.Salvajes/tigre.jpg" width="161" height="151">
+    </div>
+    </div>
+    
+    <div id="leon" class="nota">
+    <div class="textonota">
+    <img src="imagen/A.Salvajes/leon.jpg" width="161" height="151">
+    </div>
+    </div>
+    
+    <div id="aguila" class="nota">
+    <div class="textonota">
+    <img src="imagen/A.Salvajes/aguila.jpg"  width="161" height="151">
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    
+	<div data-role="footer" style="background:#FF8000">
+		<h4>Sonido de los Animales</h4>
+	</div>
+</div>
+
+</div>
+
+</body>
+</html>
